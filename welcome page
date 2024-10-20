@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+namespace Century_Plywood
+{
+ public partial class Welcome_Page : Form
+ {
+ public Welcome_Page()
+ {
+ InitializeComponent();
+ }
+ private void button1_Click(object sender, EventArgs e)
+ {
+ Welcome_Page.ActiveForm.Hide();
+ Login_Page frm = new Login_Page();
+ frm.Show();
+}
+}
+}
